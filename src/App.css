@@ -27,7 +27,7 @@ h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: linear-gradient(#17A2B8, white);
     padding: 20px 0;
 }
 
@@ -43,5 +43,5 @@ h2 {
 }
 
 .navbar-dark {
-    background-color: #901CAD;
+    background-color: #17A2B8;
 }
