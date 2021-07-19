@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-
+import { Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
+import Dogcarousel from './DogCarouselComponent';
 function RenderCard({item}) {
     return (
         <Card>
@@ -17,13 +17,16 @@ function Home(props) {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md m-1">
+                <Dogcarousel />
+            </div>
+            <div className="row">
+                <div className="col-md">
                     <RenderCard item={props.campsite} />
                 </div>
-                <div className="col-md m-1">
+                <div className="col-md">
                     <RenderCard item={props.promotion} />
                 </div>
-                <div className="col-md m-1">
+                <div className="col-md">
                     <RenderCard item={props.partner} />
                 </div>
             </div>
