@@ -1,36 +1,19 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
+//import { Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
 import Dogcarousel from './DogCarouselComponent';
-function RenderCard({item}) {
-    return (
-        <Card>
-            <CardImg src={item.image} alt={item.name} />
-            <CardBody>
-                <CardTitle>{item.name}</CardTitle>
-                <CardText>{item.description}</CardText>
-            </CardBody>
-        </Card>
-    );
-}
+import BuyItems from './ThingsToBuyComponent';
 
-function Home(props) {
+function Home() {
     return (
-        <div className="container">
-            <div className="row">
-                <Dogcarousel />
+        <React.Fragment>
+            <div className="container">
+                <div className="row">
+                    <Dogcarousel />
+                </div>
+               
             </div>
-            <div className="row">
-                <div className="col-md">
-                    <RenderCard item={props.campsite} />
-                </div>
-                <div className="col-md">
-                    <RenderCard item={props.promotion} />
-                </div>
-                <div className="col-md">
-                    <RenderCard item={props.partner} />
-                </div>
-            </div>
-        </div>
+             <BuyItems />
+        </React.Fragment>
     );
 }
 

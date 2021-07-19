@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styling.css';
+import '../styling.css';
 class BuyItems extends Component {
     constructor(props) {
         super(props);
@@ -31,7 +31,7 @@ class BuyItems extends Component {
     render(){
         const BuyItemsImages = this.state.dogs.map(dog => {
             return (
-                <div key={dog.id} className="col pt-4">
+                <div key={dog.id} className="col-xs-12 col-md-6 pt-4">
                     <img src={dog.image} class="dog-items" alt={dog.altText} />
                 </div>
             );
@@ -39,8 +39,8 @@ class BuyItems extends Component {
 
         return (
             <div className="pt-2 container">
-                <h2>Things to Buy!!</h2>
-                <div className="row">
+                <h2 className="text-center text-info">Things to Buy!!</h2>
+                <div className="row text-center">
                     {BuyItemsImages}
                 </div>
             </div>
