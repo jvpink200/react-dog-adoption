@@ -16,14 +16,14 @@ class About extends Component {
   render() {
     const myImages = this.state.images.map(myImage => {
             return (
-                <div key={myImage.id} className="col pt-4">
+                <div key={myImage.id} className="col pt-4 pb-4">
                     <img src={myImage.image} class="placeholder image" alt={myImage.altText} />
                 </div>
             );
         });
 
         return (
-            <div className="pt-2 container">
+            <div className="pt-2 container text-center">
                 <h2>About</h2>
                 <div className="row">
                     {myImages}

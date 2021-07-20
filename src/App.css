@@ -2,17 +2,8 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, .card-body>.card-title {
+h1, h2, h3, .card-body > .card-title {
     font-family: "Lobster", cursive;
-}
-
-.card-title {
-    font-weight: 500;
-    font-size: 1.25rem;
-}
-
-h2 {
-    color: #3046C5;
 }
 
 .card-img-overlay .card-title {
@@ -44,4 +35,14 @@ h2 {
 
 .navbar-dark {
     background-color: #17A2B8;
+}
+
+.carousel-caption {
+    background-color: #17A2B8;
+}
+
+ul, ul li {
+    display: inline;
+    list-style: none;
+    padding-right:10px;
 }

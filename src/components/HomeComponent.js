@@ -10,7 +10,6 @@ function Home() {
                 <div className="row">
                     <Dogcarousel />
                 </div>
-               
             </div>
              <BuyItems />
         </React.Fragment>

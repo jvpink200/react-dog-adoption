@@ -25,7 +25,7 @@ const dogs = [
 class Dogcarousel extends Component {
     render(){
         return (
-            <div className="m-3">
+            <div className="m-2 p-5">
                 <UncontrolledCarousel  items={dogs} />
             </div>
         );
