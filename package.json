@@ -42,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/jvpink200/react-dog-adoption.git",
+  "author": "jvpink200 <jvillarr20@gmail.com>",
+  "license": "MIT"
 }
