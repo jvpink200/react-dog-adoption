@@ -11,15 +11,9 @@ h1, h2, h3, .card-body > .card-title {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
-
 .site-footer {
-    background-image: linear-gradient(#17A2B8, white);
-    padding: 20px 0;
+    background-image: linear-gradient(#2AA2B8, white);
+    padding: 10px 0;
 }
 
 .jumbotron {
@@ -34,15 +28,19 @@ h1, h2, h3, .card-body > .card-title {
 }
 
 .navbar-dark {
-    background-color: #17A2B8;
+    background-color: #2AA2B8;
 }
 
 .carousel-caption {
-    background-color: #17A2B8;
+    background-color: #2AA2B8;
 }
 
 ul, ul li {
     display: inline;
     list-style: none;
-    padding-right:10px;
+}
+
+.hover-text:hover {
+    text-decoration: none;
+    color:#2AA2B8 !important;
 }

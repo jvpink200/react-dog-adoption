@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
 import Directory from './DirectoryComponent';
-import { CAMPSITES } from '../shared/campsites';
+import { DOGITEMS } from '../shared/campsites';
 import Home from './HomeComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Contact from './ContactComponent';
 import About from './AboutUsComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import { COMMENTS } from '../shared/comments';
-import { PARTNERS } from '../shared/partners';
-import { PROMOTIONS } from '../shared/promotions';
 
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            campsites: CAMPSITES,
-            comments: COMMENTS,
-            partners: PARTNERS,
-            promotions: PROMOTIONS
+            dogItems: DOGITEMS
         };
     }
 
@@ -34,7 +28,7 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path='/home' component={HomePage} />
-                    <Route exact path='/directory' render={() => <Directory campsites={this.state.campsites} />} />
+                    <Route exact path='/directory' render={() => <Directory dogItems={this.state.dogItems} />} />
                     <Route exact path='/contact' component={Contact} />
                     <Route exact path='/about' component={About} />
                     <Redirect to='/home' />

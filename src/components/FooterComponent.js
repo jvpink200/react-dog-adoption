@@ -1,31 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Footer(props) {
+function Footer() {
     return (
-        <footer className="site-footer">
-            <div className="container">
-                <div className="row">             
-                    <div className="col-4 col-sm-2 offset-1">
-                        <ul className="list-unstyled">
-                            <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/contactus'>Contact</Link></li>
-                        </ul>
-                    </div>
-                    <div className="col-6 col-sm-3 text-center">
-                        <h5>Social</h5>
-                        <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i className="fa fa-instagram" /></a>{' '}
-                        <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/"><i className="fa fa-facebook" /></a>{' '}
-                        <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter" /></a>{' '}
-                        <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube" /></a> 
-                    </div>
-                    <div className="col-sm-4 text-center">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
-                    </div>
-                </div>
+      <footer className="site-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3 col-sm-12 text-center p-3">
+              <ul className="list-unstyled">
+                <li>
+                  <Link className="text-white hover-text" to="/about">
+                    About
+                  </Link>
+                </li>
+              </ul>
             </div>
-        </footer>
+            <div className="col-md-3 col-sm-12 text-center p-3">
+              <ul className="list-unstyled">
+                <li>
+                  <Link className="text-white hover-text" to="/contactus">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-3 col-sm-12 text-center p-3">
+              <a
+                className="btn btn-social-icon btn-linkedin"
+                href="http://www.linkedin.com/"
+              >
+                <i className="fa fa-linkedin" />
+              </a>
+            </div>
+            <div className="col-md-3 col-sm-12 text-center p-3 ">
+              <a
+                className="btn btn-social-icon btn-github"
+                href="http://www.github.com/"
+              >
+                <i className="fa fa-github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     );
 }
 
