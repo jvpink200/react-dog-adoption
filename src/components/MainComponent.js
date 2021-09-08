@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Directory from './DirectoryComponent';
-import { DOGITEMS } from '../shared/campsites';
+import { DOGITEMS } from '../shared/dogItems';
 import Home from './HomeComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Contact from './ContactComponent';

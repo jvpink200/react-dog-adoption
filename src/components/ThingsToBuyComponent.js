@@ -6,22 +6,22 @@ class BuyItems extends Component {
         this.state = {
             dogs: [
                 {
-                    id:0,
+                    id:1,
                     image: 'assets/images/dog_toys.jpg',
                     altText: 'dog toys'
                 },
                 {
-                    id:1,
+                    id:2,
                     image: 'assets/images/dog_house.jpg',
                     altText: 'dog collar'
                 },
                 {
-                    id:2,
+                    id:3,
                     image: 'assets/images/dog_bed.jpg',
                     altText: 'dog bowls'
                 },
                 {
-                    id:3,
+                    id:4,
                     image:'assets/images/dog_collar.jpg',
                     altText: 'dog house'
                 }

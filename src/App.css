@@ -2,6 +2,11 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.dog-images {
+    width:100%;
+    height:12rem;    
+}
+
 h1, h2, h3, .card-body > .card-title {
     font-family: "Lobster", cursive;
 }
